@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>NoDataBase</display-name>
+  <servlet>
+			<servlet-name>abc</servlet-name>
+			<servlet-class>com.ravichandu.SerializeData</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>abc</servlet-name>
+			<url-pattern>/SaveData</url-pattern>
+		</servlet-mapping>
+		<servlet>
+			<servlet-name>abcd</servlet-name>
+			<servlet-class>com.ravichandu.LoginUser</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>abcd</servlet-name>
+			<url-pattern>/LoginUser</url-pattern>
+		</servlet-mapping>
+		
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+      </welcome-file-list>
+</web-app>
+</element>
